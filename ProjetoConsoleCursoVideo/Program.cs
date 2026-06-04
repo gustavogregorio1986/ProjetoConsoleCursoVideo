@@ -19,3 +19,16 @@ Console.WriteLine("oi \ntudo bem?");
 edwwe
 dede
  */
+
+string nome = "Eduardo";
+int idade = 24;
+double altura = 1.67;
+bool vivo = false;
+char letra = 'c';
+
+
+Console.WriteLine(nome);
+Console.WriteLine(idade);
+Console.WriteLine(altura);
+Console.WriteLine(letra);
+Console.WriteLine(vivo);
