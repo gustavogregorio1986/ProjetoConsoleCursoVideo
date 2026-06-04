@@ -32,3 +32,15 @@ Console.WriteLine(idade);
 Console.WriteLine(altura);
 Console.WriteLine(letra);
 Console.WriteLine(vivo);
+
+//nom: nome idade: idade
+Console.WriteLine("Nome: " + nome + " Idade: " + idade);
+
+Console.WriteLine($"Nome:{nome} Idade:{idade}");
+
+nome = "Crislaine Luana";
+idade = 68;
+
+Console.WriteLine($"Nome:{nome} Idade:{idade}");
+
+Console.ReadKey();
