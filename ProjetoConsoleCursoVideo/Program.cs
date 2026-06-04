@@ -41,6 +41,13 @@ Console.WriteLine($"Nome:{nome} Idade:{idade}");
 nome = "Crislaine Luana";
 idade = 68;
 
+
 Console.WriteLine($"Nome:{nome} Idade:{idade}");
 
 Console.ReadKey();
+
+const double pi = 3.14159;
+
+//pi = 3.19; não pode colocar um outro valor dentro do PI
+
+Console.WriteLine(pi);
