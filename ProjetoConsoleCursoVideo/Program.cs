@@ -44,10 +44,44 @@ idade = 68;
 
 Console.WriteLine($"Nome:{nome} Idade:{idade}");
 
-Console.ReadKey();
-
 const double pi = 3.14159;
 
 //pi = 3.19; não pode colocar um outro valor dentro do PI
 
 Console.WriteLine(pi);
+
+double a = 3.14;
+int b = Convert.ToInt32(a);
+
+Console.WriteLine(a);
+Console.WriteLine(a.GetType());
+Console.WriteLine(b);
+Console.WriteLine(b.GetType());
+
+int c = 3;
+double d = Convert.ToDouble(c);
+
+Console.WriteLine(c);
+Console.WriteLine(c.GetType());
+Console.WriteLine(d);
+Console.WriteLine(d.GetType());
+
+//string a = "2";
+//int b = Convert.ToInt32(a);
+
+//Console.WriteLine(a);
+//Console.WriteLine(a.GetType());
+//Console.WriteLine(b);
+//Console.WriteLine(b.GetType());
+
+//string a = "true";
+//bool b = Convert.ToBoolean(a);
+
+//Console.WriteLine(a);
+//Console.WriteLine(a.GetType());
+//Console.WriteLine(b);
+//Console.WriteLine(b.GetType());
+
+
+
+Console.ReadKey();
