@@ -339,17 +339,29 @@ Console.WriteLine(ultimoNome);
 //    Console.WriteLine("Não atigir as regras.");
 //}
 
-Console.WriteLine(primeiroNome);
+//Console.WriteLine(primeiroNome);
 
-Console.WriteLine("Qual nome?");
-string nome = Console.ReadLine();
+//Console.WriteLine("Qual nome?");
+//string nome = Console.ReadLine();
 
-while(nome == "")
+//while(nome == "")
+//{
+//    Console.WriteLine("Nome inválido. Qual nome?");
+//    nome = Console.ReadLine();
+//}
+
+//Console.WriteLine("Ola " + nome);
+
+for(int index = 0; index <= 10; index++)
 {
-    Console.WriteLine("Nome inválido. Qual nome?");
-    nome = Console.ReadLine();
+    Console.WriteLine(index);
 }
 
-Console.WriteLine("Ola " + nome);
+Console.WriteLine("decremento");
+
+for (int index = 10; index >= 0; index--)
+{
+    Console.WriteLine(index);
+}
 
 Console.ReadKey();
