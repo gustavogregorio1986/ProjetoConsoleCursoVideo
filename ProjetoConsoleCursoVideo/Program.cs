@@ -370,25 +370,61 @@ for (int index = 10; index >= 0; index--)
 
  */
 
-Console.Write("Quantas linhas?:  ");
-int linhas = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Quantas linhas?:  ");
+//int linhas = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Quantas colunas?:  ");
-int colunas = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Quantas colunas?:  ");
+//int colunas = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Qual o simbolo?: ");
-string simbolo = Console.ReadLine();
+//Console.Write("Qual o simbolo?: ");
+//string simbolo = Console.ReadLine();
 
 
-for(int i = 0; i < linhas; i++)
+//for(int i = 0; i < linhas; i++)
+//{
+//    for(int j = 0; j < colunas; j++)
+//    {
+//        Console.Write(simbolo);
+//    }
+//    Console.WriteLine();
+//}
+
+
+Random random = new Random();
+
+bool jogarNovamente = true;
+int min = 1;
+int max = 100;
+int chute;
+int numero;
+int tentativas;
+string resposta;
+
+while(jogarNovamente)
 {
-    for(int j = 0; j < colunas; j++)
+    chute = 0;
+    tentativas = 0;
+    numero = random.Next(min, max + 1);
+    resposta = "";
+
+    while (chute != numero)
     {
-        Console.Write(simbolo);
+        Console.Write($"Adivcinhe o numero entre {min} e {max}: ");
+        chute = Convert.ToInt32(Console.ReadLine());
+        tentativas++;
+        if (chute < numero) 
+        {
+            Console.WriteLine("Muito baixo! Tente novamente.");
+        }
+        else if (chute > numero)
+        {
+            Console.WriteLine("Muito alto! Tente novamente.");
+        }
+        else
+        {
+            Console.WriteLine($"Parabéns! Você acertou o número {numero} em {tentativas} tentativas.");
+        }
     }
-    Console.WriteLine();
 }
-
-
 
 Console.ReadKey();
