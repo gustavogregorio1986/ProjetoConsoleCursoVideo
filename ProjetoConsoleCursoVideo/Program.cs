@@ -288,31 +288,55 @@ Console.WriteLine(ultimoNome);
 //    Console.WriteLine("você não entrou.");
 //}
 
-Console.WriteLine("Qual é o dia da semana?? ");
-string dia = Console.ReadLine();
+//Console.WriteLine("Qual é o dia da semana?? ");
+//string dia = Console.ReadLine();
 
-switch (dia)
-{ 
-    case "segunda":
-        Console.WriteLine("Hoje é segunda-feira.");
-        break;
-    case "terça":
-        Console.WriteLine("Hoje é terça-feira.");
-        break;
-    case "quarta":
-        Console.WriteLine("Hoje é quarta-feira.");
-        break;
-    case "quinta":
-        Console.WriteLine("Hoje é quinta-feira.");
-        break;
-    case "sexta":
-        Console.WriteLine("Hoje é sexta-feira.");
-        break;
-    default:
-        Console.WriteLine($"{dia} não é um dia da semana.");
-        break;
+//switch (dia)
+//{ 
+//    case "segunda":
+//        Console.WriteLine("Hoje é segunda-feira.");
+//        break;
+//    case "terça":
+//        Console.WriteLine("Hoje é terça-feira.");
+//        break;
+//    case "quarta":
+//        Console.WriteLine("Hoje é quarta-feira.");
+//        break;
+//    case "quinta":
+//        Console.WriteLine("Hoje é quinta-feira.");
+//        break;
+//    case "sexta":
+//        Console.WriteLine("Hoje é sexta-feira.");
+//        break;
+//    default:
+//        Console.WriteLine($"{dia} não é um dia da semana.");
+//        break;
+//}
+
+//Console.WriteLine("Digite sua idade: ");
+//int idade = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Você é administrador: ");
+//bool adm = Convert.ToBoolean(Console.ReadLine());
+
+//if(idade >= 18 && adm)
+//{
+//    Console.WriteLine("Você pode acessar o sistema.");
+//}
+//else
+//{
+//    Console.WriteLine("Não atigir as regras.");
+//}
+
+Console.WriteLine("Você é administrador: ");
+bool adm = Convert.ToBoolean(Console.ReadLine());
+
+if (!adm)
+{
+    Console.WriteLine("Você pode acessar o sistema.");
 }
-
-
+else
+{
+    Console.WriteLine("Não atigir as regras.");
+}
 
 Console.ReadKey();
