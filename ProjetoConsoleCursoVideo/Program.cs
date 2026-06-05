@@ -327,16 +327,29 @@ Console.WriteLine(ultimoNome);
 //    Console.WriteLine("Não atigir as regras.");
 //}
 
-Console.WriteLine("Você é administrador: ");
-bool adm = Convert.ToBoolean(Console.ReadLine());
+//Console.WriteLine("Você é administrador: ");
+//bool adm = Convert.ToBoolean(Console.ReadLine());
 
-if (!adm)
+//if (!adm)
+//{
+//    Console.WriteLine("Você pode acessar o sistema.");
+//}
+//else
+//{
+//    Console.WriteLine("Não atigir as regras.");
+//}
+
+Console.WriteLine(primeiroNome);
+
+Console.WriteLine("Qual nome?");
+string nome = Console.ReadLine();
+
+while(nome == "")
 {
-    Console.WriteLine("Você pode acessar o sistema.");
+    Console.WriteLine("Nome inválido. Qual nome?");
+    nome = Console.ReadLine();
 }
-else
-{
-    Console.WriteLine("Não atigir as regras.");
-}
+
+Console.WriteLine("Ola " + nome);
 
 Console.ReadKey();
