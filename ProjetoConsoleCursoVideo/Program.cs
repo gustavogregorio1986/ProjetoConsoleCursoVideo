@@ -376,7 +376,7 @@ int linhas = Convert.ToInt32(Console.ReadLine());
 Console.Write("Quantas colunas?:  ");
 int colunas = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("QWWual o simbolo?: ");
+Console.Write("Qual o simbolo?: ");
 string simbolo = Console.ReadLine();
 
 
@@ -388,5 +388,7 @@ for(int i = 0; i < linhas; i++)
     }
     Console.WriteLine();
 }
+
+
 
 Console.ReadKey();
