@@ -180,6 +180,50 @@ Console.WriteLine(pi);
 
 //int resultado1 = num1 + num2;
 
-//Console.WriteLine($"O resulktado é {resultado}");
+//Console.WriteLine($"O resulktado é {resultado}")
+
+string nomeCompleto = "Crislaine Luana";
+string numeroTelefone = "41-98888-8888";
+
+nomeCompleto = nomeCompleto.ToUpper();
+
+nomeCompleto = nomeCompleto.ToLower();
+Console.WriteLine(nomeCompleto);
+
+//numeroTelefone = numeroTelefone.Replace("-","/");
+
+//Console.WriteLine(numeroTelefone);
+
+numeroTelefone = numeroTelefone.Replace("-", "");
+
+Console.WriteLine(numeroTelefone);
+
+Console.WriteLine(nomeCompleto.Length);
+
+string primeiroNome = nomeCompleto.Substring(0, 9);
+
+Console.WriteLine(primeiroNome);
+
+string ultimoNome = nomeCompleto.Substring(10, 5);
+
+Console.WriteLine(ultimoNome);
+
+Console.WriteLine("Digite sua idade: ");
+int idade = Convert.ToInt32(Console.ReadLine());
+
+if(idade >= 100)
+{
+    Console.WriteLine("Você é muito velho");
+}
+else if (idade >= 100)
+{
+    Console.WriteLine("Você é de maior.");
+}
+else
+{
+    Console.WriteLine("Você é de menor.");
+}
+
+Console.WriteLine("Cheguei aqui no final.");
 
 Console.ReadKey();
