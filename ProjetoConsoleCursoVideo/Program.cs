@@ -390,41 +390,58 @@ for (int index = 10; index >= 0; index--)
 //}
 
 
-Random random = new Random();
+//Random random = new Random();
 
-bool jogarNovamente = true;
-int min = 1;
-int max = 100;
-int chute;
-int numero;
-int tentativas;
-string resposta;
+//bool jogarNovamente = true;
+//int min = 1;
+//int max = 100;
+//int chute;
+//int numero;
+//int tentativas;
+//string resposta;
 
-while(jogarNovamente)
+//while(jogarNovamente)
+//{
+//    chute = 0;
+//    tentativas = 0;
+//    numero = random.Next(min, max + 1);
+//    resposta = "";
+
+//    while (chute != numero)
+//    {
+//        Console.Write($"Adivcinhe o numero entre {min} e {max}: ");
+//        chute = Convert.ToInt32(Console.ReadLine());
+//        tentativas++;
+//        if (chute < numero) 
+//        {
+//            Console.WriteLine("Muito baixo! Tente novamente.");
+//        }
+//        else if (chute > numero)
+//        {
+//            Console.WriteLine("Muito alto! Tente novamente.");
+//        }
+//        else
+//        {
+//            Console.WriteLine($"Parabéns! Você acertou o número {numero} em {tentativas} tentativas.");
+//        }
+//    }
+//}
+
+/*
+
+   Array - Variavel que pode armazenar multiplos valores e não apenas um.
+
+ */
+
+string[] frutas = { "laranja", "Uva", "limão", "kiwi" };
+
+for(int i = 0; i < frutas.Length; i++)
 {
-    chute = 0;
-    tentativas = 0;
-    numero = random.Next(min, max + 1);
-    resposta = "";
-
-    while (chute != numero)
-    {
-        Console.Write($"Adivcinhe o numero entre {min} e {max}: ");
-        chute = Convert.ToInt32(Console.ReadLine());
-        tentativas++;
-        if (chute < numero) 
-        {
-            Console.WriteLine("Muito baixo! Tente novamente.");
-        }
-        else if (chute > numero)
-        {
-            Console.WriteLine("Muito alto! Tente novamente.");
-        }
-        else
-        {
-            Console.WriteLine($"Parabéns! Você acertou o número {numero} em {tentativas} tentativas.");
-        }
-    }
+    Console.WriteLine(frutas[i]);
 }
+
+frutas[0] = "Alterado";
+
+Console.WriteLine(frutas[0]);
 
 Console.ReadKey();
