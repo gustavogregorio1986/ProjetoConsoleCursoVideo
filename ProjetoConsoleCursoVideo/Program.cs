@@ -208,23 +208,23 @@ string ultimoNome = nomeCompleto.Substring(10, 5);
 
 Console.WriteLine(ultimoNome);
 
-Console.WriteLine("Digite sua idade: ");
-int idade = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Digite sua idade: ");
+//int idade = Convert.ToInt32(Console.ReadLine());
 
-if(idade >= 100)
-{
-    Console.WriteLine("Você é muito velho");
-}
-else if (idade >= 100)
-{
-    Console.WriteLine("Você é de maior.");
-}
-else
-{
-    Console.WriteLine("Você é de menor.");
-}
+//if(idade >= 100)
+//{
+//    Console.WriteLine("Você é muito velho");
+//}
+//else if (idade >= 100)
+//{
+//    Console.WriteLine("Você é de maior.");
+//}
+//else
+//{
+//    Console.WriteLine("Você é de menor.");
+//}
 
-Console.WriteLine("Cheguei aqui no final.");
+//Console.WriteLine("Cheguei aqui no final.");
 
 // > maior que
 //>= maior ou igual 
@@ -232,62 +232,86 @@ Console.WriteLine("Cheguei aqui no final.");
 //== igual a
 //!= diferente
 
-int numero = 15;
+//int numero = 15;
 
-if (numero > 15)
-{
-    Console.WriteLine("você nretrou.");
-}
-else
-{
-    Console.WriteLine("você não entrou.");
-}
+//if (numero > 15)
+//{
+//    Console.WriteLine("você entrou.");
+//}
+//else
+//{
+//    Console.WriteLine("você não entrou.");
+//}
 
-if (numero >= 15)
-{
-    Console.WriteLine("você nretrou.");
-}
-else
-{
-    Console.WriteLine("você não entrou.");
-}
+//if (numero >= 15)
+//{
+//    Console.WriteLine("você entrou.");
+//}
+//else
+//{
+//    Console.WriteLine("você não entrou.");
+//}
 
-if (numero <= 15)
-{
-    Console.WriteLine("você nretrou.");
-}
-else
-{
-    Console.WriteLine("você não entrou.");
-}
+//if (numero <= 15)
+//{
+//    Console.WriteLine("você entrou.");
+//}
+//else
+//{
+//    Console.WriteLine("você não entrou.");
+//}
 
-if (numero == 15)
-{
-    Console.WriteLine("você nretrou.");
-}
-else
-{
-    Console.WriteLine("você não entrou.");
-}
+//if (numero == 15)
+//{
+//    Console.WriteLine("você nretrou.");
+//}
+//else
+//{
+//    Console.WriteLine("você não entrou.");
+//}
 
-if (numero == 16)
-{
-    Console.WriteLine("você nretrou.");
-}
-else
-{
-    Console.WriteLine("você não entrou.");
-}
+//if (numero == 16)
+//{
+//    Console.WriteLine("você nretrou.");
+//}
+//else
+//{
+//    Console.WriteLine("você não entrou.");
+//}
 
-if (numero != 16)
-{
-    Console.WriteLine("você nretrou.");
-}
-else
-{
-    Console.WriteLine("você não entrou.");
-}
+//if (numero != 16)
+//{
+//    Console.WriteLine("você nretrou.");
+//}
+//else
+//{
+//    Console.WriteLine("você não entrou.");
+//}
 
+Console.WriteLine("Qual é o dia da semana?? ");
+string dia = Console.ReadLine();
+
+switch (dia)
+{ 
+    case "segunda":
+        Console.WriteLine("Hoje é segunda-feira.");
+        break;
+    case "terça":
+        Console.WriteLine("Hoje é terça-feira.");
+        break;
+    case "quarta":
+        Console.WriteLine("Hoje é quarta-feira.");
+        break;
+    case "quinta":
+        Console.WriteLine("Hoje é quinta-feira.");
+        break;
+    case "sexta":
+        Console.WriteLine("Hoje é sexta-feira.");
+        break;
+    default:
+        Console.WriteLine($"{dia} não é um dia da semana.");
+        break;
+}
 
 
 
