@@ -440,8 +440,11 @@ for(int i = 0; i < frutas.Length; i++)
     Console.WriteLine(frutas[i]);
 }
 
-frutas[0] = "Alterado";
+Console.WriteLine("Foreach");
 
-Console.WriteLine(frutas[0]);
+foreach(string fruta in frutas)
+{
+    Console.WriteLine(fruta);
+}
 
 Console.ReadKey();
