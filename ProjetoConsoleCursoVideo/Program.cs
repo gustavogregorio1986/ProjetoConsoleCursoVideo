@@ -226,4 +226,69 @@ else
 
 Console.WriteLine("Cheguei aqui no final.");
 
+// > maior que
+//>= maior ou igual 
+//<= menor ou igual
+//== igual a
+//!= diferente
+
+int numero = 15;
+
+if (numero > 15)
+{
+    Console.WriteLine("você nretrou.");
+}
+else
+{
+    Console.WriteLine("você não entrou.");
+}
+
+if (numero >= 15)
+{
+    Console.WriteLine("você nretrou.");
+}
+else
+{
+    Console.WriteLine("você não entrou.");
+}
+
+if (numero <= 15)
+{
+    Console.WriteLine("você nretrou.");
+}
+else
+{
+    Console.WriteLine("você não entrou.");
+}
+
+if (numero == 15)
+{
+    Console.WriteLine("você nretrou.");
+}
+else
+{
+    Console.WriteLine("você não entrou.");
+}
+
+if (numero == 16)
+{
+    Console.WriteLine("você nretrou.");
+}
+else
+{
+    Console.WriteLine("você não entrou.");
+}
+
+if (numero != 16)
+{
+    Console.WriteLine("você nretrou.");
+}
+else
+{
+    Console.WriteLine("você não entrou.");
+}
+
+
+
+
 Console.ReadKey();
