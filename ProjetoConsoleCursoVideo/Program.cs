@@ -518,7 +518,7 @@ static  void  FelizAniversario()
 
 /*
  
- params keyword = paramegtro de um metodo que receb um metodo que receb uma variável nunmero de parametros, o tipo de parametro deve ser unico
+ params keyword = parametro de um metodo que receb um metodo que recebe uma variável nunmero de parametros, o tipo de parametro deve ser unico
 
  */
 
@@ -535,6 +535,39 @@ static double CheckOut(params double[] precos)
     }
 
     return totalGeral;
+}
+
+/*
+
+  TRY
+  CATCH
+  FINALLY
+
+ */
+
+int num1;
+int num2;
+int resultado;
+
+try
+{
+    Console.Write("Digite o primeiro numero: ");
+    num1 = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("Digite o segundo numero: ");
+    num2 = Convert.ToInt32(Console.ReadLine());
+
+    resultado = num1 * num2; 
+
+    Console.WriteLine($" {num1} / {num2} = {resultado}");
+}
+catch(Exception ex)
+{
+    Console.WriteLine(ex.Message); 
+}
+finally
+{
+    Console.WriteLine("Eu esotu aparecendo independente de qualquer coisa");
 }
 
 Console.ReadKey();
