@@ -447,4 +447,27 @@ foreach(string fruta in frutas)
     Console.WriteLine(fruta);
 }
 
+/*
+
+  Métodos - Uma forma de reutilizar codigos
+
+ */
+
+FelizAniversario();
+FelizAniversario();
+FelizAniversario();
+FelizAniversario();
+FelizAniversario();
+FelizAniversario();
+
+static  void  FelizAniversario()
+{
+    Console.WriteLine("Parabéns pra você");
+    Console.WriteLine("Happy birtday to you");
+    Console.WriteLine("Happy birtday dear you");
+    Console.WriteLine("Feliz anivesario");
+    Console.WriteLine("Feliz anivesario");
+    Console.WriteLine();
+}
+
 Console.ReadKey();
