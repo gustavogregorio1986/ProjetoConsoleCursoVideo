@@ -470,4 +470,51 @@ static  void  FelizAniversario()
     Console.WriteLine();
 }
 
+/*
+ 
+
+  Return - retorna dados para area onde o metodo foi chamado
+
+ */
+
+
+double resultado = Multiplicar(2, 6);
+
+double num1;
+double num2;
+
+Console.Write("Digite o primeiro numero: ");
+num1 = Convert.ToDouble(Console.ReadLine());
+ 
+Console.Write("Digite o segundo numero: ");
+num2 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Qual operação(x ou /): ");
+string operacao = Console.ReadLine();
+
+
+if(operacao == "*")
+{
+    double result = Multiplicar(num1, num2);
+    Console.WriteLine($"{num1} X {num2} = {result}");
+}
+else
+{
+    double result = Divisao(num1, num2);
+    Console.WriteLine($"{num1} / {num2} = {result}");
+}
+
+static double Multiplicar(double num1, double num2)
+{
+     double resultado = num1 * num2;
+     return resultado;
+}
+
+static double Divisao(double num1, double num2)
+{
+     double resultado = num1 / num2;
+     return resultado;
+}
+
+
 Console.ReadKey();
