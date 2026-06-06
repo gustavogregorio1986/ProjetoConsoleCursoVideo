@@ -545,29 +545,43 @@ static double CheckOut(params double[] precos)
 
  */
 
-int num1;
-int num2;
-int resultado;
+//int num1;
+//int num2;
+//int resultado;
 
-try
-{
-    Console.Write("Digite o primeiro numero: ");
-    num1 = Convert.ToInt32(Console.ReadLine());
+//try
+//{
+//    Console.Write("Digite o primeiro numero: ");
+//    num1 = Convert.ToInt32(Console.ReadLine());
 
-    Console.Write("Digite o segundo numero: ");
-    num2 = Convert.ToInt32(Console.ReadLine());
+//    Console.Write("Digite o segundo numero: ");
+//    num2 = Convert.ToInt32(Console.ReadLine());
 
-    resultado = num1 * num2; 
+//    resultado = num1 * num2; 
 
-    Console.WriteLine($" {num1} / {num2} = {resultado}");
-}
-catch(Exception ex)
-{
-    Console.WriteLine(ex.Message); 
-}
-finally
-{
-    Console.WriteLine("Eu esotu aparecendo independente de qualquer coisa");
-}
+//    Console.WriteLine($" {num1} / {num2} = {resultado}");
+//}
+//catch(Exception ex)
+//{
+//    Console.WriteLine(ex.Message); 
+//}
+//finally
+//{
+//    Console.WriteLine("Eu esotu aparecendo independente de qualquer coisa");
+//}
+
+/*
+
+   Operador ternário = O operador ternário é uma forma curta e simples de escrever um if/else em uma unica linha
+
+ */
+
+int idade = 25;
+
+string resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
+
+Console.WriteLine(resultado);
+
+
 
 Console.ReadKey();
