@@ -582,6 +582,31 @@ string resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
 
 Console.WriteLine(resultado);
 
+/*
 
+  Array multidimensional = array com duas dimensões
+  array bidimensional
+
+ */
+
+int[,] numeros = new int[3, 6]
+{
+     {1,2,3, 11,22,33 },
+     {4,5,6, 44,55, 66},
+     {7,8,9,77,88,99}
+};
+
+Console.WriteLine(numeros[0,1]);
+Console.WriteLine(numeros[1, 2]);
+
+for(int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 6; j++)
+    {
+        Console.Write(numeros[i, j] + " ");
+    }
+
+    Console.WriteLine();
+}   
 
 Console.ReadKey();
